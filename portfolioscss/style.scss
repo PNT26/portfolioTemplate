@@ -1,0 +1,442 @@
+$buttonBackground: rgb(40, 192, 226);
+$buttonHover: black;
+$textColor: rgb(106, 106, 106);
+$progess-1: rgb(173, 173, 173);
+$progress-2: rgb(85, 85, 85);
+$contactInfo: rgb(46, 46, 46);
+$button:rgb(209, 209, 209);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.portfolio {
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: .3s ease-in-out;
+    img {
+        position: relative;
+        max-width: 5em;
+        border-radius: 50%;
+        float: right;
+        margin: 1em 0 2em 0;
+        transition: .3s ease-in-out;
+    }
+    .portfolio-container {
+        display: none;
+        transition: .3s ease-in-out;
+    }
+}
+
+.main-content {
+    position: relative;
+    display: block;
+    padding: 1em;
+    transition: .3s ease-in-out;
+    .title {
+        font-size: 3em;
+        margin: 6rem 0 2rem 0;
+    }
+    .nav-menu {
+        display: block;
+        margin-bottom: 2rem;
+        ul {
+            display: flex;
+            li {
+                list-style-type: none;
+                p {
+                    color: black;
+                    font-size: 1.2rem;
+                    padding: 0  1rem 0 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                    padding: .5rem 1rem;
+                    font-size: 1.2rem;
+                    transition: .5s ease-in-out;
+                    &:hover {
+                        background-color: $buttonHover;
+                        color: white;
+                    }
+                }
+                .small-screen {
+                    visibility: hidden;
+                }
+                .active {
+                    background-color: $buttonHover;
+                    color: white;
+                    transition: .5s ease-in-out;
+                    &:hover {
+                        background-color: $progess-1;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        .cards {
+            width: 100%;
+            display: block;
+            margin-bottom: 2rem;
+            img {
+                width: 100%;
+            }
+            h2, p {
+                padding: 1rem 0 0 1rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    div {
+        padding: .5rem 1rem;
+        cursor: pointer;
+        &:hover {
+            background-color: $buttonHover;
+            color: white;
+        }
+    }
+    .active-page {
+        background-color: $buttonHover;
+        color: white;
+        &:hover {
+            background-color: $progess-1;
+            color: $buttonHover;
+        }
+    }
+}
+
+.my-images {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    
+    .image-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+    }  
+}
+
+.about-me {
+    width: 100%;
+    display: block;
+    padding: 1.2rem;
+    margin: auto;
+    h2 {
+        padding: 0 0 1rem 0;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+}
+
+.technical-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    h2 {
+        font-weight: 100;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 3rem;
+    }
+    .progress-1 {
+        width: 100%;
+        background-color: $progess-1;
+        
+        .progress-2 {
+            width: 95%;
+            background-color: $progress-2;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .resume {
+        max-width: 14rem;
+        padding: .8rem 2rem;
+        margin: 2rem 0 2rem 0;
+        background-color: $progress-2;
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: $progess-1;
+            color: black;
+        }
+    }
+}
+
+.charge {
+    padding: 1rem;
+    margin: 2rem 0 2rem 0;
+    h2 {
+        font-weight: 100;
+        margin-bottom: 1rem;
+    }
+    .charge-container {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        .charge-card {
+            width: 100%;
+            border: .1px solid rgb(194, 194, 194);
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            opacity: .6;
+            transition: .3s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+            h3 {
+                font-size: 2rem;
+                font-weight: 100;
+                background-color: $buttonHover;
+                color: white;
+                padding: 2rem 0 2rem 0;
+            }
+            .pro {
+                background-color: $buttonBackground;
+            }
+            .sum {
+                font-size: 2rem;
+            } 
+            p {
+                font-size: 1.1rem;
+                padding: 1.2rem;
+                border-bottom: .1px solid rgb(203, 203, 203);
+                
+                span {
+                    font-size: 1.1rem;
+                    color: $textColor;
+                    display: block;
+                    padding: 1.2rem;
+                }
+            }
+            .sign-up {
+                font-size: 1.1rem;
+                padding: 1rem 2rem;
+                margin: 2rem 0 2rem 0;
+                background-color: $buttonBackground;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background-color: $buttonHover;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: $progess-1;
+    h2 {
+        padding: 1rem 0 1rem 1rem;
+    }
+    .contact-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        margin: 1rem 0;
+        p {
+            padding: 1rem;
+            background-color: $contactInfo;
+            text-align: center;
+            color: white;
+        }
+        .blue {
+            background-color: $buttonBackground;
+        }
+    }
+
+    form {
+        display: block;
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+        input {
+            width: 100%;
+            padding: 1rem;
+        }
+        .button {
+            background-color: $buttonHover;
+            color: white;
+            border: none;
+            max-width: 10rem;
+            margin: 1rem 0;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover {
+                background-color: $button;
+                color: black;
+            }
+        }
+    }
+}
+
+footer {
+    display: block;
+    background-color: $progress-2;
+    color: white;
+    padding: 2rem 1rem;
+    h1 {
+        margin: 1rem 0;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .main-content {
+        .content-section {
+            grid-template-columns: 30.33% 30.33% 30.33%; 
+            gap: 1rem;
+        }
+        .nav-menu {
+            ul {
+                li {
+                    .small-screen {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .my-images {
+        .image-container {
+            grid-template-columns: 50% 50%;
+            gap: 1rem;
+           
+        }
+    }
+    .about-me {
+        width: 70%;
+    }
+
+    .charge {
+        .charge-container {
+            grid-template-columns: 30.33% 30.33% 30.33%;
+            gap: 1rem;
+        }
+    }
+    .contact {
+        .contact-info {
+            grid-template-columns: 30% 30% 30%;
+        }
+    }
+    
+    
+}
+
+@media (min-width: 994px) {
+    .portfolio {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        img {
+            display: block;
+            max-width: 10em;
+            float: left;
+            padding: 1rem;
+            border-radius: 20px;
+        }
+        .portfolio-container {
+            display: block;
+            position: relative;
+            padding: 1rem;
+            h1 {
+                margin: 0 0 2rem 0;
+            }
+            p {
+                color: $textColor;
+                margin-bottom: 2rem;
+            }
+            .flex-container-menu {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                ul {
+                    width: 100%;
+                    list-style: none;
+                    
+                    li {
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            color: black;
+                            padding: 1rem 0 1rem 1rem;
+                            cursor: pointer;
+                            transition: .3s ease-in-out;
+                            &:hover {
+                                background-color: $progess-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-content, .my-images, .about-me, .technical-skills,
+     .charge, .contact, footer {
+        width: 80%;
+        float: right;
+     }
+    .main-content {
+        .title {
+            margin-top: 1rem;
+        }
+    }
+
+}

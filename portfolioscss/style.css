@@ -1,0 +1,519 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.portfolio {
+  display: block;
+  width: 100%;
+  position: relative;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.portfolio img {
+  position: relative;
+  max-width: 5em;
+  border-radius: 50%;
+  float: right;
+  margin: 1em 0 2em 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.portfolio .portfolio-container {
+  display: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.main-content {
+  position: relative;
+  display: block;
+  padding: 1em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.main-content .title {
+  font-size: 3em;
+  margin: 6rem 0 2rem 0;
+}
+
+.main-content .nav-menu {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.main-content .nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .nav-menu ul li {
+  list-style-type: none;
+}
+
+.main-content .nav-menu ul li p {
+  color: black;
+  font-size: 1.2rem;
+  padding: 0  1rem 0 0;
+}
+
+.main-content .nav-menu ul li a {
+  text-decoration: none;
+  color: black;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.main-content .nav-menu ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.main-content .nav-menu ul li .small-screen {
+  visibility: hidden;
+}
+
+.main-content .nav-menu ul li .active {
+  background-color: black;
+  color: white;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.main-content .nav-menu ul li .active:hover {
+  background-color: #adadad;
+}
+
+.main-content .content-section {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-content .content-section .cards {
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.main-content .content-section .cards img {
+  width: 100%;
+}
+
+.main-content .content-section .cards h2, .main-content .content-section .cards p {
+  padding: 1rem 0 0 1rem;
+}
+
+.main-content .content-section .cards h2 {
+  font-size: 1.2rem;
+}
+
+.main-content .content-section .cards p {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.flexbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.flexbox-container div {
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.flexbox-container div:hover {
+  background-color: black;
+  color: white;
+}
+
+.flexbox-container .active-page {
+  background-color: black;
+  color: white;
+}
+
+.flexbox-container .active-page:hover {
+  background-color: #adadad;
+  color: black;
+}
+
+.my-images {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+}
+
+.my-images .image-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-images .image-container img {
+  width: 100%;
+}
+
+.about-me {
+  width: 100%;
+  display: block;
+  padding: 1.2rem;
+  margin: auto;
+}
+
+.about-me h2 {
+  padding: 0 0 1rem 0;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+.technical-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.technical-skills h2 {
+  font-weight: 100;
+}
+
+.technical-skills p {
+  font-size: 1.1rem;
+  line-height: 3rem;
+}
+
+.technical-skills .progress-1 {
+  width: 100%;
+  background-color: #adadad;
+}
+
+.technical-skills .progress-1 .progress-2 {
+  width: 95%;
+  background-color: #555555;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.technical-skills .resume {
+  max-width: 14rem;
+  padding: .8rem 2rem;
+  margin: 2rem 0 2rem 0;
+  background-color: #555555;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.technical-skills .resume:hover {
+  background-color: #adadad;
+  color: black;
+}
+
+.charge {
+  padding: 1rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.charge h2 {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.charge .charge-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.charge .charge-container .charge-card {
+  width: 100%;
+  border: 0.1px solid #c2c2c2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  opacity: .6;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.charge .charge-container .charge-card:hover {
+  opacity: 1;
+}
+
+.charge .charge-container .charge-card h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  background-color: black;
+  color: white;
+  padding: 2rem 0 2rem 0;
+}
+
+.charge .charge-container .charge-card .pro {
+  background-color: #28c0e2;
+}
+
+.charge .charge-container .charge-card .sum {
+  font-size: 2rem;
+}
+
+.charge .charge-container .charge-card p {
+  font-size: 1.1rem;
+  padding: 1.2rem;
+  border-bottom: 0.1px solid #cbcbcb;
+}
+
+.charge .charge-container .charge-card p span {
+  font-size: 1.1rem;
+  color: #6a6a6a;
+  display: block;
+  padding: 1.2rem;
+}
+
+.charge .charge-container .charge-card .sign-up {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 2rem 0;
+  background-color: #28c0e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.charge .charge-container .charge-card .sign-up:hover {
+  background-color: black;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #adadad;
+}
+
+.contact h2 {
+  padding: 1rem 0 1rem 1rem;
+}
+
+.contact .contact-info {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+}
+
+.contact .contact-info p {
+  padding: 1rem;
+  background-color: #2e2e2e;
+  text-align: center;
+  color: white;
+}
+
+.contact .contact-info .blue {
+  background-color: #28c0e2;
+}
+
+.contact form {
+  display: block;
+}
+
+.contact form p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.contact form input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.contact form .button {
+  background-color: black;
+  color: white;
+  border: none;
+  max-width: 10rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.contact form .button:hover {
+  background-color: #d1d1d1;
+  color: black;
+}
+
+footer {
+  display: block;
+  background-color: #555555;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+footer h1 {
+  margin: 1rem 0;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 600px) {
+  .main-content .content-section {
+    -ms-grid-columns: 30.33% 30.33% 30.33%;
+        grid-template-columns: 30.33% 30.33% 30.33%;
+    gap: 1rem;
+  }
+  .main-content .nav-menu ul li .small-screen {
+    visibility: hidden;
+  }
+  .my-images .image-container {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+  .about-me {
+    width: 70%;
+  }
+  .charge .charge-container {
+    -ms-grid-columns: 30.33% 30.33% 30.33%;
+        grid-template-columns: 30.33% 30.33% 30.33%;
+    gap: 1rem;
+  }
+  .contact .contact-info {
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+  }
+}
+
+@media (min-width: 994px) {
+  .portfolio {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20%;
+  }
+  .portfolio img {
+    display: block;
+    max-width: 10em;
+    float: left;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  .portfolio .portfolio-container {
+    display: block;
+    position: relative;
+    padding: 1rem;
+  }
+  .portfolio .portfolio-container h1 {
+    margin: 0 0 2rem 0;
+  }
+  .portfolio .portfolio-container p {
+    color: #6a6a6a;
+    margin-bottom: 2rem;
+  }
+  .portfolio .portfolio-container .flex-container-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .portfolio-container .flex-container-menu ul {
+    width: 100%;
+    list-style: none;
+  }
+  .portfolio .portfolio-container .flex-container-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0 1rem 1rem;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .portfolio .portfolio-container .flex-container-menu ul li a:hover {
+    background-color: #adadad;
+  }
+  .main-content, .my-images, .about-me, .technical-skills,
+  .charge, .contact, footer {
+    width: 80%;
+    float: right;
+  }
+  .main-content .title {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
