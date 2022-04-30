@@ -1,1 +1,1 @@
-# portfolioTemplate
+This is just a design of a portfolio template, which was already created and is available in w3schools. I hvae designed this template in order to test my skills in UI design/development. The code that is uploaded here is authentic and purely developed by me and I can assure that, not a single code has been copied.
